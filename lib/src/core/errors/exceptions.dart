@@ -1,7 +1,7 @@
-class ServerExcpection implements Exception {
+class ServerException implements Exception {
   final int? statusCode;
-  final String message;
-  ServerExcpection({this.statusCode, required this.message});
+  final String? message;
+  ServerException({this.statusCode, required this.message});
 }
 
 class NetworkException implements Exception {

@@ -24,6 +24,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dartz: ^0.10.1
   dio: any
   flutter_bloc: any
   equatable: any
