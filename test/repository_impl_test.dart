@@ -3,7 +3,6 @@ import 'package:mocktail/mocktail.dart';
 import 'package:rick_morty_app/src/data/repositories/character_repository_impl.dart';
 import 'package:rick_morty_app/src/data/datasources/character_remote_ds.dart';
 import 'package:rick_morty_app/src/data/models/paginated_characters_dto.dart';
-import 'package:rick_morty_app/src/data/models/character_dto.dart';
 
 class MockRemote extends Mock implements CharacterRemoteDataSource {}
 

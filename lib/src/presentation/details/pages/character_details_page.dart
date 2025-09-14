@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:rick_morty_app/app.dart';
 import 'package:rick_morty_app/src/domain/entities/character.dart';
 
 class CharacterDetailsPage extends StatelessWidget {
