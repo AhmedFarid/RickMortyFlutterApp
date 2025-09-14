@@ -1,6 +1,7 @@
 // app,dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rick_morty_app/src/domain/entities/character.dart';
 import 'src/presentation/list/bloc/character_list_bloc.dart';
 import 'src/di/injector.dart';
 import 'src/domain/usecases/get_characters_page.dart';
@@ -24,7 +25,10 @@ class App extends StatelessWidget {
         ),
         GoRoute(
           path: '/character/:id',
-          builder: (ctx, state) => CharacterDetailsPage(character: state.extra),
+          builder: (ctx, state) {
+            final character = state.extra as Character;
+            return CharacterDetailsPage(character: character);
+          },
         ),
       ],
     );
